@@ -1,0 +1,20 @@
+=== E3_Ligase_Cleanse Log ===
+Ligase: TRIM24
+PDB dir: /home/jxs794/WebTools/E3_UPDATE_TOOL/TRIM24/PDB
+Curated PDB count: 2
+Non-curated PDB count: 0
+
+RAW_DELETE	NONE
+
+=== Ligase-level SDF generation ===
+LIGASE_SDF	4C1	built_from_pdb	TRIM24_4C1.sdf
+LIGASE_SDF	4CN	built_from_pdb	TRIM24_4CN.sdf
+
+=== Per-structure SDF_4Download generation ===
+SDF4	4YAB_4CN.pdb	copied	4YAB_4CN.sdf
+SDF4	4YC9_4C1.pdb	copied	4YC9_4C1.sdf
+
+Deleted raw/non-curated PDBs: 0
+Unique ligands processed: 2
+SDF_4Download files targeted: 2
+Failed ligand codes: None

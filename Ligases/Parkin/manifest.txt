@@ -1,0 +1,12 @@
+Ligase Name: Parkin
+Folder Name: Parkin
+Created: 2026-04-18 18:16:21
+
+Requested PDB IDs:
+  - 8W31
+
+Downloaded CIF Files:
+  - 8W31.cif
+
+Failed Downloads:
+  - None

@@ -1,33 +1,114 @@
-# E3 Recruiter Ligandalyzer Scripts
+# 🧬 E3 Recruiter Ligandalyzer Scripts
 
-This repository contains the data-processing scripts used to build the curated datasets behind **E3 Recruiter Ligandalyzer**, a structure-first web platform for exploring E3 ligase recruiter ligands, scaffold relationships, physicochemical properties, solvent-accessible surface area (SASA), and downstream PROTAC Builder integration.
+<p align="center">
+  <strong>Data-processing workflows used to build the curated datasets behind E3 Recruiter Ligandalyzer</strong>
+</p>
 
-The public web platform is available at:
+<p align="center">
+  <em>A structure-first cheminformatics and structural-biology pipeline for collecting, cleaning, annotating, standardizing, and packaging E3 ligase recruiter ligand data.</em>
+</p>
 
-**https://E3Ligandalyzer.com**
+<p align="center">
+  <a href="https://E3Ligandalyzer.com">
+    <img src="https://img.shields.io/badge/Launch-E3Ligandalyzer.com-success?style=for-the-badge&logo=googlechrome" alt="Launch E3 Recruiter Ligandalyzer">
+  </a>
+  <a href="https://github.com/Joey305/E3-Ligandalyzer-Scripts">
+    <img src="https://img.shields.io/badge/View%20Code-GitHub-black?style=for-the-badge&logo=github" alt="View code on GitHub">
+  </a>
+  <a href="mailto:jmschulz@med.miami.edu?subject=E3%20Recruiter%20Ligandalyzer%20Question%20%2F%20Collaboration">
+    <img src="https://img.shields.io/badge/Contact%20the%20Author-Joseph--Michael%20Schulz-blue?style=for-the-badge&logo=gmail" alt="Contact Joseph-Michael Schulz">
+  </a>
+</p>
 
-This repository is intended to document and preserve the Python workflows used to collect, clean, standardize, annotate, summarize, and package the ligand/recruiter data used by the platform and associated manuscript.
+<p align="center">
+  <img src="https://img.shields.io/badge/E3%20Ligases-21-orange?style=for-the-badge" alt="21 curated E3 ligases">
+  <img src="https://img.shields.io/badge/Unique%20Recruiter%20Ligands-494-blueviolet?style=for-the-badge" alt="494 unique recruiter ligands">
+  <img src="https://img.shields.io/badge/LR%20Entries-602-lightgrey?style=for-the-badge" alt="602 LR-tagged recruiter-conformation entries">
+  <img src="https://img.shields.io/badge/PDB%20Structures-568-9cf?style=for-the-badge" alt="568 recruiter-bound PDB structures">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Scaffolds-386-success?style=for-the-badge" alt="386 unique scaffolds">
+  <img src="https://img.shields.io/badge/Scaffold%20Superclusters-419-informational?style=for-the-badge" alt="419 scaffold superclusters">
+  <img src="https://img.shields.io/badge/RDKit-Cheminformatics-blue?style=for-the-badge" alt="RDKit cheminformatics">
+  <img src="https://img.shields.io/badge/SASA-Structure%20Analysis-orange?style=for-the-badge" alt="SASA structural analysis">
+</p>
 
 ---
 
-## Project Summary
+## 🚀 Overview
 
-E3 Recruiter Ligandalyzer was developed to support ligand-centric comparison of experimentally resolved E3 ligase recruiter chemotypes across curated E3 ligases. The workflow processes recruiter-bound E3 ligase structures, extracts and standardizes ligand data, maps repeated structural instances to recruiter IDs, calculates ligand descriptors, assigns scaffold classes, computes SASA features, and builds final tables for downstream database integration.
+**E3 Recruiter Ligandalyzer Scripts** contains the Python workflows used to build the curated datasets behind **E3 Recruiter Ligandalyzer**, a structure-first web platform for exploring E3 ligase recruiter ligands, scaffold relationships, physicochemical properties, solvent-accessible surface area (SASA), and downstream PROTAC Builder integration.
 
-The finalized dataset described in the manuscript contains:
+The public web platform is freely accessible at:
 
-- **21 curated E3 ligases**
-- **494 unique recruiter ligand/component names**
-- **602 LR-tagged recruiter-conformation entries**
-- **568 unique recruiter-bound PDB structures**
-- **386 unique scaffolds**
-- **419 scaffold superclusters**
+<p align="center">
+  <a href="https://E3Ligandalyzer.com">
+    <img src="https://img.shields.io/badge/Open%20the%20Platform-E3Ligandalyzer.com-success?style=for-the-badge&logo=googlechrome" alt="Open E3Ligandalyzer.com">
+  </a>
+</p>
+
+This repository documents and preserves the workflows used to collect, clean, standardize, annotate, summarize, and package the recruiter ligand data used by the platform and associated manuscript.
+
+---
+
+## 🧭 Repository Navigation
+
+<p align="center">
+  <a href="#-quick-start">
+    <img src="https://img.shields.io/badge/Get%20Started-Quick%20Start-orange?style=for-the-badge&logo=gnubash" alt="Quick start">
+  </a>
+  <a href="#-recommended-pipeline-order">
+    <img src="https://img.shields.io/badge/View%20Pipeline-18%20Stages-blueviolet?style=for-the-badge&logo=python" alt="View pipeline order">
+  </a>
+  <a href="#-final-dataset-summary">
+    <img src="https://img.shields.io/badge/View%20Dataset%20Summary-Final%20Counts-success?style=for-the-badge" alt="View dataset summary">
+  </a>
+  <a href="#-citation">
+    <img src="https://img.shields.io/badge/Cite-E3%20Recruiter%20Ligandalyzer-lightgrey?style=for-the-badge&logo=googlescholar" alt="Citation">
+  </a>
+</p>
+
+- [Project Summary](#-project-summary)
+- [Repository Contents](#-repository-contents)
+- [Expected Directory Structure](#-expected-directory-structure)
+- [Installation](#-installation)
+- [Quick Start](#-quick-start)
+- [Recommended Pipeline Order](#-recommended-pipeline-order)
+- [Key Output Tables](#-key-output-tables)
+- [Important Data Definitions](#-important-data-definitions)
+- [Final Dataset Summary](#-final-dataset-summary)
+- [Database Build](#-database-build)
+- [Citation](#-citation)
+- [Data and Code Availability](#-data-and-code-availability)
+- [Notes for Reproducibility](#-notes-for-reproducibility)
+- [License](#-license)
+- [Contact](#-contact)
+
+---
+
+## 🔬 Project Summary
+
+**E3 Recruiter Ligandalyzer** was developed to support ligand-centric comparison of experimentally resolved E3 ligase recruiter chemotypes across curated E3 ligases.
+
+The workflow processes recruiter-bound E3 ligase structures, extracts and standardizes ligand data, maps repeated structural instances to recruiter IDs, calculates ligand descriptors, assigns scaffold classes, computes SASA features, and builds final tables for downstream database integration.
+
+The finalized manuscript-facing dataset contains:
+
+| Dataset component | Count |
+|---|---:|
+| Curated E3 ligases | **21** |
+| Unique recruiter ligand/component names | **494** |
+| LR-tagged recruiter-conformation entries | **602** |
+| Unique recruiter-bound PDB structures | **568** |
+| Unique scaffolds | **386** |
+| Scaffold superclusters | **419** |
 
 In this workflow, a **unique recruiter ligand** refers to the original ligand/component identifier, while an **LR recruiter code** refers to a curated recruiter/conformation/instance tag. This distinction is important because a single ligand may appear in multiple crystal structures, binding poses, or conformational contexts.
 
 ---
 
-## Repository Contents
+## 📦 Repository Contents
 
 The scripts are numbered approximately in the order they were used during dataset construction.
 
@@ -60,7 +141,7 @@ The scripts are numbered approximately in the order they were used during datase
 
 ---
 
-## Expected Directory Structure
+## 📁 Expected Directory Structure
 
 The scripts assume a working project directory similar to:
 
@@ -88,9 +169,9 @@ The exact file set may vary depending on which stage of the pipeline is being re
 
 ---
 
-## Installation
+## ⚙️ Installation
 
-These scripts were developed for a Python/RDKit cheminformatics environment. A typical setup is:
+These scripts were developed for a Python/RDKit cheminformatics environment.
 
 ```bash
 conda create -n e3ligandalyzer python=3.10 -y
@@ -99,11 +180,11 @@ conda install -c conda-forge rdkit pandas numpy biopython requests gemmi -y
 pip install tqdm
 ```
 
-Some scripts may also use standard-library modules only. If additional imports are required, install them into the same environment.
+Some scripts may use only standard-library modules. If additional imports are required, install them into the same environment.
 
 ---
 
-## Quick Start
+## 🚀 Quick Start
 
 Clone the repository:
 
@@ -136,7 +217,7 @@ Ligase_Table/Derived_RecruiterCode_To_Ligand_Map.csv
 
 ---
 
-## Recommended Pipeline Order
+## 🧬 Recommended Pipeline Order
 
 The full historical workflow was iterative and included manual curation. The approximate processing order is:
 
@@ -167,11 +248,11 @@ python 17__BUILDdb.py
 python 18_Data_Summary.py
 ```
 
-> **Note:** Some scripts are designed to be rerun after manual curation or table updates. Always inspect generated logs, backup files, and output tables before proceeding to the next stage.
+Some scripts are designed to be rerun after manual curation or table updates. Inspect generated logs, backup files, and output tables before proceeding to the next stage.
 
 ---
 
-## Key Output Tables
+## 📊 Key Output Tables
 
 The finalized workflow produces or expects several important tables in `Ligase_Table/`.
 
@@ -198,7 +279,7 @@ The finalized workflow produces or expects several important tables in `Ligase_T
 
 ---
 
-## Important Data Definitions
+## 🧠 Important Data Definitions
 
 ### Unique recruiter ligand
 
@@ -222,7 +303,7 @@ Scaffold superclusters group related scaffold identifiers to support higher-leve
 
 ---
 
-## Final Dataset Summary
+## 📌 Final Dataset Summary
 
 The final manuscript-facing summary can be regenerated with:
 
@@ -245,7 +326,7 @@ These counts should be regenerated whenever upstream curation or table-generatio
 
 ---
 
-## Database Build
+## 🗄️ Database Build
 
 After the CSV tables in `Ligase_Table/` have been finalized, build the SQLite database with:
 
@@ -257,7 +338,7 @@ This script imports CSV tables from `Ligase_Table/` into a SQLite database for u
 
 ---
 
-## Citation
+## 🧬 Citation
 
 If you use this workflow, code, or generated dataset, please cite the associated E3 Recruiter Ligandalyzer manuscript when available.
 
@@ -269,33 +350,43 @@ Schulz JM, Reynolds RC, Schürer SC. E3 Recruiter Ligandalyzer: A Structure-Firs
 
 ---
 
-## Data and Code Availability
+## 🌐 Data and Code Availability
 
 The E3 Recruiter Ligandalyzer web platform is freely accessible at:
 
-**https://E3Ligandalyzer.com**
+<p align="center">
+  <a href="https://E3Ligandalyzer.com">
+    <img src="https://img.shields.io/badge/Web%20Platform-E3Ligandalyzer.com-success?style=for-the-badge&logo=googlechrome" alt="E3Ligandalyzer.com">
+  </a>
+</p>
 
 The scripts used to build and summarize the dataset are available at:
 
-**https://github.com/Joey305/E3-Ligandalyzer-Scripts**
+<p align="center">
+  <a href="https://github.com/Joey305/E3-Ligandalyzer-Scripts">
+    <img src="https://img.shields.io/badge/Code-GitHub%20Repository-black?style=for-the-badge&logo=github" alt="GitHub repository">
+  </a>
+</p>
 
 Processed tables and database files may be added to the repository or released separately depending on manuscript and repository size requirements.
 
 ---
 
-## Notes for Reproducibility
+## 🔁 Notes for Reproducibility
 
 - Run scripts from the project root unless a script-specific path is provided.
 - Inspect backup files and logs after each cleaning step.
 - Some curation steps are intentionally manual or semi-manual to remove crystallographic additives, nonspecific binders, duplicate ligand names, and inappropriate entries.
-- The `18_Data_Summary.py` script should be treated as the final consistency check before reporting manuscript-level counts.
+- Treat `18_Data_Summary.py` as the final consistency check before reporting manuscript-level counts.
 - If any upstream table changes, rerun the downstream scaffold, descriptor, database, and summary steps as needed.
 
 ---
 
-## License
+## ⚖️ License
 
-Add a license before public release. Recommended options:
+A license should be added before public release.
+
+Recommended options:
 
 - **MIT License** for permissive code reuse.
 - **Apache 2.0 License** for permissive reuse with explicit patent language.
@@ -303,12 +394,25 @@ Add a license before public release. Recommended options:
 
 ---
 
-## Contact
+## 📬 Contact
 
-For questions, collaboration, or dataset inquiries, contact:
+For questions, collaboration, or dataset inquiries:
+
+<p align="center">
+  <a href="mailto:jmschulz@med.miami.edu?subject=E3%20Recruiter%20Ligandalyzer%20Question%20%2F%20Collaboration">
+    <img src="https://img.shields.io/badge/Joseph--Michael%20Schulz-jmschulz%40med.miami.edu-blue?style=for-the-badge&logo=gmail" alt="Email Joseph-Michael Schulz">
+  </a>
+  <a href="https://github.com/Joey305">
+    <img src="https://img.shields.io/badge/GitHub-Joey305-black?style=for-the-badge&logo=github" alt="Joey305 GitHub profile">
+  </a>
+</p>
 
 **Joseph-Michael Schulz**  
 University of Miami | Schürer Lab  
 GitHub: [Joey305](https://github.com/Joey305)
 
-# E3-Ligandalyzer-Scripts
+---
+
+## 🙌 Practical Takeaway
+
+This repository preserves the reproducible data-processing backbone behind **E3 Recruiter Ligandalyzer**: from structure retrieval and ligand extraction to SASA analysis, scaffold clustering, descriptor calculation, master-table generation, SQLite database construction, and manuscript-ready dataset summaries.

@@ -1,0 +1,5 @@
+Ligase,Input_File,PDB_ID,Selected_Ligand_Source,Selected_Ligand_Output,Ligand_Source_Chain,Ligand_Residue_Number,Ligand_Insertion_Code,Chosen_Protein_Chain_Source,Output_Path,Output_File,Final_Output_Chain
+MDMX,/home/jxs794/WebTools/E3_UPDATE_TOOL/MDMX/3LBJ.cif,3LBJ,WW8,WW8,E,112,,E,/home/jxs794/WebTools/E3_UPDATE_TOOL/MDMX/PDB/3LBJ_WW8.pdb,3LBJ_WW8.pdb,A
+MDMX,/home/jxs794/WebTools/E3_UPDATE_TOOL/MDMX/7C3Q.cif,7C3Q,NUT,NUT,A,202,,A,/home/jxs794/WebTools/E3_UPDATE_TOOL/MDMX/PDB/7C3Q_NUT.pdb,7C3Q_NUT.pdb,A
+MDMX,/home/jxs794/WebTools/E3_UPDATE_TOOL/MDMX/7C3Y.cif,7C3Y,NUT,NUT,A,202,,A,/home/jxs794/WebTools/E3_UPDATE_TOOL/MDMX/PDB/7C3Y_NUT.pdb,7C3Y_NUT.pdb,A
+MDMX,/home/jxs794/WebTools/E3_UPDATE_TOOL/MDMX/7C44.cif,7C44,NUT,NUT,A,201,,A,/home/jxs794/WebTools/E3_UPDATE_TOOL/MDMX/PDB/7C44_NUT.pdb,7C44_NUT.pdb,A

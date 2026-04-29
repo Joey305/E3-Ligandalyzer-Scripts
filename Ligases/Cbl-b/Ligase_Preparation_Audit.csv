@@ -1,0 +1,4 @@
+Ligase,Input_File,PDB_ID,Selected_Ligand_Source,Selected_Ligand_Output,Ligand_Source_Chain,Ligand_Residue_Number,Ligand_Insertion_Code,Chosen_Protein_Chain_Source,Output_Path,Output_File,Final_Output_Chain
+Cbl-b,/Users/jerrismacbook/Downloads/E3_UPDATE/Cbl-b/9FQH.cif,9FQH,A1IEW,D00,A,501,,A,/Users/jerrismacbook/Downloads/E3_UPDATE/Cbl-b/PDB/9FQH_D00.pdb,9FQH_D00.pdb,A
+Cbl-b,/Users/jerrismacbook/Downloads/E3_UPDATE/Cbl-b/9FQI.cif,9FQI,A1IEV,D01,A,501,,A,/Users/jerrismacbook/Downloads/E3_UPDATE/Cbl-b/PDB/9FQI_D01.pdb,9FQI_D01.pdb,A
+Cbl-b,/Users/jerrismacbook/Downloads/E3_UPDATE/Cbl-b/9FQJ.cif,9FQJ,A1IE5,D02,A,501,,A,/Users/jerrismacbook/Downloads/E3_UPDATE/Cbl-b/PDB/9FQJ_D02.pdb,9FQJ_D02.pdb,A

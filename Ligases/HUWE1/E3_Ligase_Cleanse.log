@@ -1,0 +1,21 @@
+=== E3_Ligase_Cleanse Log ===
+Ligase: HUWE1
+PDB dir: /Users/jerrismacbook/Downloads/E3_UPDATE/HUWE1/PDB
+Curated PDB count: 2
+Non-curated PDB count: 2
+
+RAW_DELETE	8RD0.pdb
+RAW_DELETE	8RD1.pdb
+
+=== Ligase-level SDF generation ===
+LIGASE_SDF	51X	built_from_pdb	HUWE1_51X.sdf
+LIGASE_SDF	YP2	built_from_pdb	HUWE1_YP2.sdf
+
+=== Per-structure SDF_4Download generation ===
+SDF4	8RD0_51X.pdb	copied	8RD0_51X.sdf
+SDF4	8RD1_YP2.pdb	copied	8RD1_YP2.sdf
+
+Deleted raw/non-curated PDBs: 2
+Unique ligands processed: 2
+SDF_4Download files targeted: 2
+Failed ligand codes: None

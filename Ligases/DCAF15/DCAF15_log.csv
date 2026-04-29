@@ -1,0 +1,11 @@
+pdb,ligand,mw,decision,reason
+6PAI,O6M,336.368,keep,keep
+6Q0R,O6M,336.368,keep,keep
+6Q0R,OXM,89.05,skip,too_small
+6Q0V,P7M,415.11,keep,keep
+6Q0W,EF6,385.846,keep,keep
+6SJ7,EF6,385.846,keep,keep
+6UD7,EF6,385.846,keep,keep
+6UE5,Q5J,340.4,keep,keep
+8ROX,A1H,314.303,keep,keep
+8ROY,A1H,314.303,keep,keep

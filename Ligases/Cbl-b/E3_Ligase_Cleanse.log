@@ -1,0 +1,22 @@
+=== E3_Ligase_Cleanse Log ===
+Ligase: Cbl-b
+PDB dir: /Users/jerrismacbook/Downloads/E3_UPDATE/Cbl-b/PDB
+Curated PDB count: 3
+Non-curated PDB count: 0
+
+RAW_DELETE	NONE
+
+=== Ligase-level SDF generation ===
+LIGASE_SDF	D00	built_from_pdb	Cbl-b_D00.sdf
+LIGASE_SDF	D01	built_from_pdb	Cbl-b_D01.sdf
+LIGASE_SDF	D02	built_from_pdb	Cbl-b_D02.sdf
+
+=== Per-structure SDF_4Download generation ===
+SDF4	9FQH_D00.pdb	copied	9FQH_D00.sdf
+SDF4	9FQI_D01.pdb	copied	9FQI_D01.sdf
+SDF4	9FQJ_D02.pdb	copied	9FQJ_D02.sdf
+
+Deleted raw/non-curated PDBs: 0
+Unique ligands processed: 3
+SDF_4Download files targeted: 3
+Failed ligand codes: None

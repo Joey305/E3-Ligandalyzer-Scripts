@@ -1,0 +1,408 @@
+====================================================================================================
+E3 RECRUITER LIGANDALYZER DATA SUMMARY
+====================================================================================================
+Generated: 2026-04-28 23:22:21
+Working directory: /Users/jxs794/Desktop/E3Ligandalyzer
+Table directory: /Users/jxs794/Desktop/E3Ligandalyzer/Ligase_Table
+Ligase directory: /Users/jxs794/Desktop/E3Ligandalyzer/Ligases
+
+This report summarizes the current E3 Recruiter Ligandalyzer data tables for manuscript, platform,
+and quality-control use. In this fixed version, unique ligands are counted using the original
+ligand/component names from Recruiter_Master_Map.csv. LR recruiter codes are reported separately as
+recruiter-code conformation/instance tags. This avoids the misleading interpretation that every
+LR##### code is a chemically unique ligand.
+
+
+====================================================================================================
+0. MASTER MAP INTERPRETATION
+====================================================================================================
+
+                                Metric                    Value
+                 Master mapping source Recruiter_Master_Map.csv
+        Recruiter-code column detected           RECRUITER_CODE
+      Ligand/component column detected                   Ligand
+Unique original ligand/component names                      494
+         Unique LR recruiter-code tags                      602
+  Ligands with >1 LR code/conformation                       76
+       Maximum LR codes for one ligand                      308
+
+
+====================================================================================================
+1. MANUSCRIPT-FACING DATASET OVERVIEW
+====================================================================================================
+
+                                   Metric                                            Value
+                        CSV tables loaded                                               23
+       Curated E3 ligase folders detected                                               21
+      Clean E3 ligases detected from CSVs                                               21
+Unique ligands / chemical component names                                              494
+                      Unique ligand basis original ligand/component names from Recruite...
+      LR recruiter-code conformation tags                                              602
+                  LR recruiter-code basis unique LR recruiter codes from Recruiter_Mast...
+      Ligands with multiple conformations                                               76
+      Unique PDB / structure IDs detected                                              568
+                Unique scaffolds detected                                              386
+   Unique scaffold superclusters detected                                              419
+
+
+----------------------------------------------------------------------------------------------------
+Curated ligase folders detected
+----------------------------------------------------------------------------------------------------
+
+CHIP, CRBN, Cbl-b, DCAF1, DCAF15, DCAF16, GID4, HOIP(RNF31), HUWE1, KEAP1, LIVIN, MDM2, MDMX, Parkin, RNF146, SOCS2, TRIM21, TRIM24, VHL, XIAP, cIAP1
+
+
+----------------------------------------------------------------------------------------------------
+Clean ligases detected from CSV tables
+----------------------------------------------------------------------------------------------------
+
+CHIP, CRBN, Cbl-b, DCAF1, DCAF15, DCAF16, GID4, HOIP(RNF31), HUWE1, KEAP1, LIVIN, MDM2, MDMX, Parkin, RNF146, SOCS2, TRIM21, TRIM24, VHL, XIAP, cIAP1
+
+
+====================================================================================================
+2. CSV TABLE INVENTORY
+====================================================================================================
+
+                                     Table  Rows  Columns                                              Detected key fields
+       Ligand_Instance_Recruiter_Codes.csv   602       11       ligase, recruiter_code, ligand_name, instance, pdb, smiles
+           Ligase_Chemical_Descriptors.csv   602       41                        recruiter_code, ligand_name, smiles, atom
+              Ligase_Duplicate_Ligands.csv    47        2                                      recruiter_code, ligand_name
+                Ligase_Ligand_Metadata.csv   602       35 ligase, recruiter_code, ligand_name, instance, pdb, smiles, a...
+              Ligase_Ligand_SASA_atoms.csv 16710       20         ligase, recruiter_code, ligand_name, instance, pdb, atom
+            Ligase_Ligand_SASA_summary.csv   602       26   ligase, recruiter_code, ligand_name, instance, pdb, atom, sasa
+                 Ligase_Ligands_Smiles.csv 16609        4                        recruiter_code, ligand_name, smiles, atom
+        Ligase_Ligands_Smiles_3DMapped.csv 16609       14           ligase, recruiter_code, ligand_name, pdb, smiles, atom
+            Ligase_Recruiters_Scaffold.csv   602        6            ligase, recruiter_code, ligand_name, smiles, scaffold
+      Ligase_Recruiters_Superclustered.csv   602       19 ligase, recruiter_code, ligand_name, smiles, scaffold, superc...
+                    Ligase_SMILE_Codes.csv   602        2                                           recruiter_code, smiles
+              Ligase_SMILE_Codes_Atoms.csv 16609        3                                     recruiter_code, smiles, atom
+                  Ligase_Scaffold_Data.csv   388       16            ligase, recruiter_code, ligand_name, smiles, scaffold
+             Ligase_Scaffold_Frequency.csv   388        5                    ligase, recruiter_code, ligand_name, scaffold
+               Ligase_Scaffold_Summary.csv    21        5                    ligase, recruiter_code, ligand_name, scaffold
+Ligase_Scaffold_Supercluster_Frequency.csv   388        8      ligase, recruiter_code, ligand_name, scaffold, supercluster
+   Ligase_Scaffold_Supercluster_Matrix.csv    21      373                              ligase, recruiter_code, ligand_name
+         Ligase_Scaffold_Superclusters.csv   372       13 ligase, recruiter_code, ligand_name, smiles, scaffold, superc...
+              Recruiter_Code_Crosswalk.csv   602       11       ligase, recruiter_code, ligand_name, instance, pdb, smiles
+                  Recruiter_Master_Map.csv   602        3                                      recruiter_code, ligand_name
+                  Recruiter_SMILES_Map.csv   602        2                                           recruiter_code, smiles
+                 Recruiter_SMILES_Wide.csv   495       21                                           recruiter_code, smiles
+                  Scaffold_Unified_Map.csv   388        3                                                         scaffold
+
+
+====================================================================================================
+3. LIGAND CONFORMATION SUMMARY
+====================================================================================================
+
+Top ligand table uses original ligand/component names from Recruiter_Master_Map.csv. Conformations_LR_Codes is the number of LR recruiter codes associated with each ligand.
+
+
+Ligand  Conformations_LR_Codes  Unique_Ligases  Unique_PDBs  Unique_SMILES  Unique_Scaffolds                                                             LR_Code_List                                                              Ligase_List                                                                 PDB_List
+     1                     308              18            0            302               302 LR00001, LR00002, LR00003, LR00004, LR00005, LR00015, LR00025, LR0003... CHIP, CRBN, Cbl-b, DCAF1, DCAF15, DCAF16, GID4, HOIP(RNF31), KEAP1, L...                                                                         
+  MDM2                     116               1            0             74                74 LR00258, LR00259, LR00260, LR00261, LR00262, LR00263, LR00264, LR0026...                                                                     MDM2                                                                         
+  CRBN                     108               1            0             44                44 LR00006, LR00007, LR00008, LR00009, LR00010, LR00011, LR00012, LR0001...                                                                     CRBN                                                                         
+TRIM21                     106               1            0             78                78 LR00387, LR00388, LR00389, LR00390, LR00391, LR00392, LR00393, LR0039...                                                                   TRIM21                                                                         
+     2                      96               9            0             47                47 LR00021, LR00030, LR00039, LR00046, LR00051, LR00052, LR00053, LR0005...               CRBN, DCAF1, HUWE1, KEAP1, MDM2, RNF146, TRIM21, VHL, XIAP                                                                         
+ KEAP1                      92               1            0             71                71 LR00158, LR00159, LR00160, LR00161, LR00162, LR00163, LR00164, LR0016...                                                                    KEAP1                                                                         
+   VHL                      59               1            2             52                34 LR00495, LR00496, LR00497, LR00498, LR00499, LR00500, LR00501, LR0050...                                                                      VHL                                                               8QCU, 9GHX
+    39                      39               1            0              1                 1 LR00006, LR00007, LR00008, LR00009, LR00010, LR00011, LR00012, LR0001...                                                                     CRBN                                                                         
+  XIAP                      37               1            0             27                27 LR00554, LR00555, LR00556, LR00557, LR00558, LR00559, LR00560, LR0056...                                                                     XIAP                                                                         
+     3                      30               7            0              9                 9 LR00212, LR00213, LR00214, LR00231, LR00232, LR00233, LR00258, LR0025...                              KEAP1, MDM2, MDMX, TRIM21, VHL, XIAP, cIAP1                                                                         
+     4                      28               5            0              7                 7 LR00022, LR00048, LR00059, LR00085, LR00161, LR00166, LR00167, LR0018...                                          CRBN, KEAP1, MDM2, TRIM21, XIAP                                                                         
+ DCAF1                      25               1            0             17                17 LR00117, LR00118, LR00119, LR00120, LR00121, LR00122, LR00123, LR0012...                                                                    DCAF1                                                                         
+     6                      24               4            0              4                 4 LR00055, LR00056, LR00057, LR00058, LR00077, LR00080, LR00142, LR0014...                                              CRBN, DCAF15, SOCS2, TRIM21                                                                         
+   EF2                      20               1           20             20                 0 LR00006, LR00010, LR00012, LR00016, LR00017, LR00018, LR00019, LR0002...                                                                     CRBN 4CI1, 4TZC, 4V2Y, 4V32, 5AMH, 5AMI, 5AMJ, 5YIZ, 5YJ0, 6R0U, 6R12, 6R1...
+     5                      20               4            0              4                 4 LR00072, LR00073, LR00074, LR00075, LR00076, LR00120, LR00121, LR0012...                                                 CRBN, DCAF1, KEAP1, MDM2                                                                         
+     7                      14               2            0              2                 2 LR00028, LR00066, LR00067, LR00068, LR00069, LR00070, LR00071, LR0030...                                                               CRBN, MDM2                                                                         
+   NUT                      13               2           10             42                 0 LR00281, LR00282, LR00320, LR00335, LR00336, LR00359, LR00360, LR0036...                                                               MDM2, MDMX               4HG7, 4J3E, 5C5A, 5Z02, 5ZXF, 7C3Q, 7C3Y, 7C44, 8HDG, 8IA5
+    13                      13               1            0              1                 1 LR00506, LR00507, LR00508, LR00509, LR00513, LR00515, LR00518, LR0052...                                                                      VHL                                                                         
+ CIAP1                      13               1            0             11                11 LR00591, LR00592, LR00593, LR00594, LR00595, LR00596, LR00597, LR0059...                                                                    cIAP1                                                                         
+    12                      12               1            0              1                 1 LR00388, LR00414, LR00418, LR00420, LR00430, LR00438, LR00447, LR0044...                                                                   TRIM21                                                                         
+   Y70                      11               1           11             21                 0 LR00008, LR00011, LR00013, LR00026, LR00027, LR00042, LR00060, LR0006...                                                                     CRBN         4CI3, 4TZU, 4V2Z, 6H0F, 6H0G, 6UML, 8D81, 8OIZ, 8TNP, 8U16, 8U17
+    10                      10               1            0              1                 1 LR00281, LR00282, LR00320, LR00335, LR00336, LR00359, LR00360, LR0036...                                                                     MDM2                                                                         
+DCAF15                       9               1            0              4                 4 LR00142, LR00143, LR00144, LR00145, LR00146, LR00147, LR00148, LR0014...                                                                   DCAF15                                                                         
+     8                       8               1            0              1                 1   LR00514, LR00516, LR00517, LR00519, LR00520, LR00536, LR00537, LR00552                                                                      VHL                                                                         
+   0EH                       7               1            7             13                 0            LR00300, LR00312, LR00333, LR00337, LR00350, LR00351, LR00369                                                                     MDM2                                 4N5T, 4UMN, 5XXK, 6AAW, 6V4E, 6V4G, 8GJS
+
+
+----------------------------------------------------------------------------------------------------
+Conformation count distribution
+----------------------------------------------------------------------------------------------------
+
+ LR codes / conformations per ligand  Number of ligands
+                                   1                450
+                                   2                 37
+                                   3                  5
+                                   4                  3
+                                   5                  2
+                                   6                  3
+                                   7                  2
+                                   8                  1
+                                   9                  1
+                                  10                  1
+                                  11                  1
+                                  12                  1
+                                  13                  3
+                                  14                  1
+                                  20                  2
+                                  24                  1
+                                  25                  1
+                                  28                  1
+                                  30                  1
+                                  37                  1
+                                  39                  1
+                                  59                  1
+                                  92                  1
+                                  96                  1
+                                 106                  1
+                                 108                  1
+                                 116                  1
+                                 308                  1
+
+
+====================================================================================================
+4. LIGASE-LEVEL LIGAND, CONFORMATION, AND SCAFFOLD SUMMARY
+====================================================================================================
+
+Ligase-level summary source: Ligand_Instance_Recruiter_Codes.csv. Unique ligands are counted from original ligand/component names mapped through Recruiter_Master_Map.csv; LR recruiter codes are counted separately as conformation/instance tags.
+
+
+     Ligase  Observations  Unique_Ligands  LR_Conformation_Codes  Unique_PDBs  Unique_Scaffolds  Unique_Superclusters
+     TRIM21           106             101                    106          101                 0                     0
+       MDM2           116              90                    116          109                 0                     0
+      KEAP1            92              88                     92           89                 0                     0
+       CRBN           108              62                    108          107                 0                     0
+        VHL            59              56                     59           57                 0                     0
+       XIAP            37              36                     37           34                 0                     0
+      DCAF1            25              17                     25           18                 0                     0
+      cIAP1            13              13                     13           12                 0                     0
+      LIVIN             7               7                      7            6                 0                     0
+     DCAF15             9               6                      9            9                 0                     0
+      SOCS2             6               5                      6            6                 0                     0
+       CHIP             5               5                      5            5                 0                     0
+      Cbl-b             3               3                      3            3                 0                     0
+HOIP(RNF31)             3               3                      3            3                 0                     0
+       MDMX             4               2                      4            4                 0                     0
+      HUWE1             2               2                      2            2                 0                     0
+     TRIM24             2               2                      2            2                 0                     0
+     RNF146             2               1                      2            2                 0                     0
+     DCAF16             1               1                      1            1                 0                     0
+       GID4             1               1                      1            1                 0                     0
+     Parkin             1               1                      1            1                 0                     0
+
+
+----------------------------------------------------------------------------------------------------
+Manuscript-style interpretation
+----------------------------------------------------------------------------------------------------
+
+The most heavily represented ligases by unique original ligand/component count are: TRIM21, MDM2,
+KEAP1, CRBN, VHL. LR recruiter-code counts are reported separately because they capture distinct
+curated instances or conformations of ligands rather than necessarily distinct chemical components.
+
+
+====================================================================================================
+5. SCAFFOLD SUMMARY
+====================================================================================================
+
+Scaffold summary source: Ligase_Recruiters_Scaffold.csv; scaffold column: Scaffold_ID. Unique_Ligands is based on original ligand/component names, not LR recruiter codes.
+
+
+                    Metric                          Value
+     Scaffold source table Ligase_Recruiters_Scaffold.csv
+           Scaffold column                    Scaffold_ID
+Unique scaffolds in source                            372
+
+
+----------------------------------------------------------------------------------------------------
+Top 25 scaffolds by ligand/conformation coverage
+----------------------------------------------------------------------------------------------------
+
+    Scaffold  Observations  Unique_Ligands  LR_Conformation_Codes  Unique_Ligases  Unique_PDBs  Unique_Superclusters
+LR-SCAF00231            21               6                     21               6            0                     0
+LR-SCAF00219             8               3                      8               3            0                     0
+LR-SCAF00166             6               2                      6               2            0                     0
+LR-SCAF00053             5               2                      5               2            0                     0
+LR-SCAF00124             5               2                      5               2            0                     0
+LR-SCAF00067             4               2                      4               2            0                     0
+LR-SCAF00206             3               2                      3               2            0                     0
+LR-SCAF00005             2               2                      2               2            0                     0
+LR-SCAF00020             2               2                      2               2            0                     0
+LR-SCAF00035             2               2                      2               2            0                     0
+LR-SCAF00100             2               2                      2               2            0                     0
+LR-SCAF00372            39               1                     39               1            0                     0
+LR-SCAF00097            13               1                     13               1            0                     0
+LR-SCAF00075            10               1                     10               1            0                     0
+LR-SCAF00360             8               1                      8               1            0                     0
+LR-SCAF00031             7               1                      7               1            0                     0
+LR-SCAF00150             7               1                      7               1            0                     0
+LR-SCAF00183             6               1                      6               1            0                     0
+LR-SCAF00215             6               1                      6               1            0                     0
+LR-SCAF00232             6               1                      6               1            0                     0
+LR-SCAF00022             5               1                      5               1            0                     0
+LR-SCAF00098             5               1                      5               1            0                     0
+LR-SCAF00131             5               1                      5               1            0                     0
+LR-SCAF00333             5               1                      5               1            0                     0
+LR-SCAF00080             4               1                      4               1            0                     0
+
+
+====================================================================================================
+6. SCAFFOLD SUPERCLUSTER SUMMARY
+====================================================================================================
+
+Supercluster summary source: Ligase_Scaffold_Superclusters.csv; supercluster column: Supercluster_Key.
+
+
+Supercluster  Observations  Unique_Ligands  LR_Conformation_Codes  Unique_Scaffolds  Unique_Ligases
+    0083d9fe             1               1                      1                 1               0
+    009a993d             1               1                      1                 1               0
+    00b73929             1               1                      1                 1               0
+    00b85fcf             1               1                      1                 1               0
+    00e15ffe             1               1                      1                 1               0
+    032061a8             1               1                      1                 1               0
+    043dd9aa             1               1                      1                 1               0
+    053d8906             1               1                      1                 1               0
+    0675e058             1               1                      1                 1               0
+    06f0bb70             1               1                      1                 1               0
+    071ba927             1               1                      1                 1               0
+    086ab553             1               1                      1                 1               0
+    0a042f59             1               1                      1                 1               0
+    0b44a4fd             1               1                      1                 1               0
+    0b61e353             1               1                      1                 1               0
+    0bf24258             1               1                      1                 1               0
+    0c0fa4cc             1               1                      1                 1               0
+    0c3aa7a7             1               1                      1                 1               0
+    0c44a538             1               1                      1                 1               0
+    0c9c5086             1               1                      1                 1               0
+    0ccf5625             1               1                      1                 1               0
+    0d0ae2c3             1               1                      1                 1               0
+    0d78dc29             1               1                      1                 1               0
+    0da27555             1               1                      1                 1               0
+    0dad107d             1               1                      1                 1               0
+
+
+====================================================================================================
+7. PHYSICOCHEMICAL AND TOPOLOGICAL DESCRIPTOR SUMMARY
+====================================================================================================
+
+Descriptor summary source: Ligase_Chemical_Descriptors.csv. Descriptor rows are usually LR recruiter-code/conformation rows. The by-ligase table additionally reports unique original ligand names.
+
+
+      Descriptor        Column   N    Mean  Median     Std     Min       Max                Extra
+Molecular Weight            MW 602 410.007 428.902 158.414 143.230   910.300                     
+            LogP          LogP 602   1.448   1.299   2.051  -7.297     7.485                     
+            TPSA          TPSA 602  90.485  91.230  37.675   6.480   293.570                     
+             HBD           HBD 602   4.611   5.000   2.010   0.000    13.000                     
+             HBA           HBA 602   6.520   7.000   2.592   2.000    19.000                     
+   Fraction Csp3 Fraction_CSP3 602   1.000   1.000   0.000   1.000     1.000                     
+             QED           QED 602   0.400   0.371   0.186   0.055     0.832                     
+Bertz Complexity       BertzCT 602 501.657 524.180 255.598  76.006 1,534.345                     
+              MR         MolMR 602 107.996 111.510  42.563  41.330   242.816                     
+   Lipinski Pass Lipinski_Pass 602      NA      NA      NA      NA        NA 466/602 pass (77.4%)
+
+
+----------------------------------------------------------------------------------------------------
+Descriptor medians/means by ligase
+----------------------------------------------------------------------------------------------------
+
+No data available.
+
+
+====================================================================================================
+8. SOLVENT ACCESSIBLE SURFACE AREA / SASA SUMMARY
+====================================================================================================
+
+Ligand-level SASA source: Ligase_Ligand_SASA_summary.csv
+Ligand-level SASA rows/conformations: N=602, mean=201.391, median=185.357, min=48.560, max=764.803
+Atom-level SASA source: Ligase_Ligand_SASA_atoms.csv
+
+
+----------------------------------------------------------------------------------------------------
+Ligand-level SASA by ligase
+----------------------------------------------------------------------------------------------------
+
+     Ligase  Rows  Unique_Ligands  LR_Conformation_Codes  Unique_PDBs Mean_SASA Median_SASA Max_SASA
+       MDM2   116              90                    116          109   240.578     217.938  585.026
+       CRBN   108              62                    108          107   190.505     137.645  764.803
+     TRIM21   106             101                    106          101   147.447     137.370  372.205
+      KEAP1    92              88                     92           89   167.664     157.606  370.961
+        VHL    59              56                     59           57   251.226     242.337  432.968
+       XIAP    37              36                     37           34   241.597     252.565  399.534
+      DCAF1    25              17                     25           18   129.971     113.191  340.148
+      cIAP1    13              13                     13           12   314.591     305.811  612.630
+     DCAF15     9               6                      9            9   238.006     246.788  336.789
+      LIVIN     7               7                      7            6   254.837     284.279  330.438
+      SOCS2     6               5                      6            6   253.834     255.482  275.458
+       CHIP     5               5                      5            5   207.824     239.115  274.643
+       MDMX     4               2                      4            4   339.525     292.538  486.328
+HOIP(RNF31)     3               3                      3            3   201.673     204.681  305.197
+      Cbl-b     3               3                      3            3    78.570      84.716   89.426
+      HUWE1     2               2                      2            2    92.547      92.547   92.806
+     RNF146     2               1                      2            2   142.153     142.153  182.310
+     TRIM24     2               2                      2            2   278.346     278.346  394.422
+     Parkin     1               1                      1            1   283.148     283.148  283.148
+       GID4     1               1                      1            1   111.464     111.464  111.464
+     DCAF16     1               1                      1            1   493.296     493.296  493.296
+
+
+----------------------------------------------------------------------------------------------------
+Top 25 most solvent-exposed atoms by SASA
+----------------------------------------------------------------------------------------------------
+
+No data available.
+
+
+====================================================================================================
+9. DATA COMPLETENESS AND SANITY CHECKS
+====================================================================================================
+
+[OK] Recruiter master map: Recruiter_Master_Map.csv present with 602 rows and 3 columns.
+[OK] Recruiter SMILES map: Recruiter_SMILES_Map.csv present with 602 rows and 2 columns.
+[OK] Ligand/recruiter instance map: Ligand_Instance_Recruiter_Codes.csv present with 602 rows and 11 columns.
+[OK] Ligase/recruiter/scaffold map: Ligase_Recruiters_Scaffold.csv present with 602 rows and 6 columns.
+[OK] Chemical descriptors: Ligase_Chemical_Descriptors.csv present with 602 rows and 41 columns.
+[OK] SASA ligand summary: Ligase_Ligand_SASA_summary.csv present with 602 rows and 26 columns.
+[OK] SASA atom table: Ligase_Ligand_SASA_atoms.csv present with 16,710 rows and 20 columns.
+[OK] Duplicate ligand table: Ligase_Duplicate_Ligands.csv present with 47 rows and 2 columns.
+[OK] Unified scaffold map: Scaffold_Unified_Map.csv present with 388 rows and 3 columns.
+
+[CHECK] Master map rows after cleaning: 602
+[CHECK] Missing ligand names in cleaned master map: 0
+[CHECK] Missing LR recruiter codes in cleaned master map: 0
+[OK] Each LR recruiter code appears once in the cleaned master map.
+
+
+
+====================================================================================================
+10. DRAFTABLE SUMMARY LANGUAGE
+====================================================================================================
+
+The current E3 Recruiter Ligandalyzer dataset contains 494 unique ligand/component names represented
+by 602 curated LR recruiter-code conformation tags across 568 unique PDB/structure identifiers and
+21 curated E3 ligases. Across scaffold annotations, the dataset contains 386 unique scaffolds and
+419 scaffold superclusters, supporting ligand-, conformation-, ligase-, and scaffold-centric
+analysis of E3 recruiter chemical space.
+
+In this dataset, 76 ligand/component names are associated with more than one LR recruiter-code tag,
+indicating multiple curated structures, poses, or conformational representations for the same
+underlying ligand. These repeated entries are retained because they preserve structural context and
+binding-mode variability rather than being collapsed into a single representative.
+
+
+====================================================================================================
+11. REPRODUCIBILITY NOTES
+====================================================================================================
+
+This summary was generated directly from the local Ligase_Table CSV files. The authoritative ligand
+identity mapping is Recruiter_Master_Map.csv, where the original ligand/component name defines
+unique ligand identity and the LR recruiter code defines a curated recruiter/conformation/instance
+tag. If upstream cleaning, scaffold unification, SASA calculation, or descriptor-generation scripts
+are rerun, rerun this summary script afterward so manuscript numbers remain synchronized with the
+database.
+
+
+----------------------------------------------------------------------------------------------------
+Derived files written
+----------------------------------------------------------------------------------------------------
+
+Ligase_Table/Derived_Ligand_Conformation_Summary.csv
+
+Ligase_Table/Derived_RecruiterCode_To_Ligand_Map.csv

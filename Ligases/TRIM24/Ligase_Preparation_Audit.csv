@@ -1,0 +1,3 @@
+Ligase,Input_File,PDB_ID,Selected_Ligand_Source,Selected_Ligand_Output,Ligand_Source_Chain,Ligand_Residue_Number,Ligand_Insertion_Code,Chosen_Protein_Chain_Source,Output_Path,Output_File,Final_Output_Chain
+TRIM24,/home/jxs794/WebTools/E3_UPDATE_TOOL/TRIM24/4YAB.cif,4YAB,4CN,4CN,B,1103,,B,/home/jxs794/WebTools/E3_UPDATE_TOOL/TRIM24/PDB/4YAB_4CN.pdb,4YAB_4CN.pdb,A
+TRIM24,/home/jxs794/WebTools/E3_UPDATE_TOOL/TRIM24/4YC9.cif,4YC9,4C1,4C1,A,1104,,A,/home/jxs794/WebTools/E3_UPDATE_TOOL/TRIM24/PDB/4YC9_4C1.pdb,4YC9_4C1.pdb,A

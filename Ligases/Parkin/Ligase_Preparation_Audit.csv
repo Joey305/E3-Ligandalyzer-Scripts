@@ -1,0 +1,2 @@
+Ligase,Input_File,PDB_ID,Selected_Ligand_Source,Selected_Ligand_Output,Ligand_Source_Chain,Ligand_Residue_Number,Ligand_Insertion_Code,Chosen_Protein_Chain_Source,Output_Path,Output_File,Final_Output_Chain
+Parkin,/home/jxs794/WebTools/E3_UPDATE_TOOL/Parkin/8W31.cif,8W31,A1AE9,D03,A,407,,A,/home/jxs794/WebTools/E3_UPDATE_TOOL/Parkin/PDB/8W31_D03.pdb,8W31_D03.pdb,A

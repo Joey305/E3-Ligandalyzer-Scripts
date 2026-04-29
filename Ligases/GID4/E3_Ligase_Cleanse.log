@@ -1,0 +1,18 @@
+=== E3_Ligase_Cleanse Log ===
+Ligase: GID4
+PDB dir: /Users/jerrismacbook/Downloads/E3_UPDATE/GID4/PDB
+Curated PDB count: 1
+Non-curated PDB count: 1
+
+RAW_DELETE	7SLZ.pdb
+
+=== Ligase-level SDF generation ===
+LIGASE_SDF	9QU	built_from_pdb	GID4_9QU.sdf
+
+=== Per-structure SDF_4Download generation ===
+SDF4	7SLZ_9QU.pdb	copied	7SLZ_9QU.sdf
+
+Deleted raw/non-curated PDBs: 1
+Unique ligands processed: 1
+SDF_4Download files targeted: 1
+Failed ligand codes: None

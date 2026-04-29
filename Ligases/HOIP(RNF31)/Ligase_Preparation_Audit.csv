@@ -1,0 +1,4 @@
+Ligase,Input_File,PDB_ID,Selected_Ligand_Source,Selected_Ligand_Output,Ligand_Source_Chain,Ligand_Residue_Number,Ligand_Insertion_Code,Chosen_Protein_Chain_Source,Output_Path,Output_File,Final_Output_Chain
+HOIP(RNF31),/home/jxs794/WebTools/E3_UPDATE_TOOL/HOIP(RNF31)/6GZY.cif,6GZY,FHH,FHH,A,4001,,A,/home/jxs794/WebTools/E3_UPDATE_TOOL/HOIP(RNF31)/PDB/6GZY_FHH.pdb,6GZY_FHH.pdb,A
+HOIP(RNF31),/home/jxs794/WebTools/E3_UPDATE_TOOL/HOIP(RNF31)/6KC5.cif,6KC5,D5U,D5U,B,1105,,B,/home/jxs794/WebTools/E3_UPDATE_TOOL/HOIP(RNF31)/PDB/6KC5_D5U.pdb,6KC5_D5U.pdb,A
+HOIP(RNF31),/home/jxs794/WebTools/E3_UPDATE_TOOL/HOIP(RNF31)/6KC6.cif,6KC6,D60,D60,A,1105,,A,/home/jxs794/WebTools/E3_UPDATE_TOOL/HOIP(RNF31)/PDB/6KC6_D60.pdb,6KC6_D60.pdb,A

@@ -1,0 +1,14 @@
+Ligase Name: RNF146
+Folder Name: RNF146
+Created: 2026-04-18 18:12:51
+
+Requested PDB IDs:
+  - 3V3L
+  - 4QPL
+
+Downloaded CIF Files:
+  - 3V3L.cif
+  - 4QPL.cif
+
+Failed Downloads:
+  - None

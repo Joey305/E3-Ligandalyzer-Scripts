@@ -1,0 +1,18 @@
+Ligase Name: MDMX
+Folder Name: MDMX
+Created: 2026-04-18 18:09:38
+
+Requested PDB IDs:
+  - 3LBJ
+  - 7C3Q
+  - 7C3Y
+  - 7C44
+
+Downloaded CIF Files:
+  - 3LBJ.cif
+  - 7C3Q.cif
+  - 7C3Y.cif
+  - 7C44.cif
+
+Failed Downloads:
+  - None

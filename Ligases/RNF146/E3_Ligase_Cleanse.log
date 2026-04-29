@@ -1,0 +1,19 @@
+=== E3_Ligase_Cleanse Log ===
+Ligase: RNF146
+PDB dir: /home/jxs794/WebTools/E3_UPDATE_TOOL/RNF146/PDB
+Curated PDB count: 2
+Non-curated PDB count: 0
+
+RAW_DELETE	NONE
+
+=== Ligase-level SDF generation ===
+LIGASE_SDF	V3L	built_from_pdb	RNF146_V3L.sdf
+
+=== Per-structure SDF_4Download generation ===
+SDF4	3V3L_V3L.pdb	copied	3V3L_V3L.sdf
+SDF4	4QPL_V3L.pdb	copied	4QPL_V3L.sdf
+
+Deleted raw/non-curated PDBs: 0
+Unique ligands processed: 1
+SDF_4Download files targeted: 2
+Failed ligand codes: None

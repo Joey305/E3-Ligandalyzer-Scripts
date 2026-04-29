@@ -1,0 +1,22 @@
+=== E3_Ligase_Cleanse Log ===
+Ligase: HOIP(RNF31)
+PDB dir: /home/jxs794/WebTools/E3_UPDATE_TOOL/HOIP(RNF31)/PDB
+Curated PDB count: 3
+Non-curated PDB count: 0
+
+RAW_DELETE	NONE
+
+=== Ligase-level SDF generation ===
+LIGASE_SDF	D5U	built_from_pdb	HOIP(RNF31)_D5U.sdf
+LIGASE_SDF	D60	built_from_pdb	HOIP(RNF31)_D60.sdf
+LIGASE_SDF	FHH	built_from_pdb	HOIP(RNF31)_FHH.sdf
+
+=== Per-structure SDF_4Download generation ===
+SDF4	6GZY_FHH.pdb	copied	6GZY_FHH.sdf
+SDF4	6KC5_D5U.pdb	copied	6KC5_D5U.sdf
+SDF4	6KC6_D60.pdb	copied	6KC6_D60.sdf
+
+Deleted raw/non-curated PDBs: 0
+Unique ligands processed: 3
+SDF_4Download files targeted: 3
+Failed ligand codes: None

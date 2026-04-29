@@ -1,0 +1,22 @@
+=== E3_Ligase_Cleanse Log ===
+Ligase: MDMX
+PDB dir: /home/jxs794/WebTools/E3_UPDATE_TOOL/MDMX/PDB
+Curated PDB count: 4
+Non-curated PDB count: 0
+
+RAW_DELETE	NONE
+
+=== Ligase-level SDF generation ===
+LIGASE_SDF	NUT	built_from_pdb	MDMX_NUT.sdf
+LIGASE_SDF	WW8	built_from_pdb	MDMX_WW8.sdf
+
+=== Per-structure SDF_4Download generation ===
+SDF4	3LBJ_WW8.pdb	copied	3LBJ_WW8.sdf
+SDF4	7C3Q_NUT.pdb	copied	7C3Q_NUT.sdf
+SDF4	7C3Y_NUT.pdb	copied	7C3Y_NUT.sdf
+SDF4	7C44_NUT.pdb	copied	7C44_NUT.sdf
+
+Deleted raw/non-curated PDBs: 0
+Unique ligands processed: 2
+SDF_4Download files targeted: 4
+Failed ligand codes: None

@@ -1,0 +1,16 @@
+Ligase Name: HOIP(RNF31)
+Folder Name: HOIP(RNF31)
+Created: 2026-04-18 18:05:41
+
+Requested PDB IDs:
+  - 6KC5
+  - 6KC6
+  - 6GZY
+
+Downloaded CIF Files:
+  - 6KC5.cif
+  - 6KC6.cif
+  - 6GZY.cif
+
+Failed Downloads:
+  - None

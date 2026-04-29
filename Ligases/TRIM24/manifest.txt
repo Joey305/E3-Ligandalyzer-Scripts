@@ -1,0 +1,14 @@
+Ligase Name: TRIM24
+Folder Name: TRIM24
+Created: 2026-04-18 18:04:15
+
+Requested PDB IDs:
+  - 4YAB
+  - 4YC9
+
+Downloaded CIF Files:
+  - 4YAB.cif
+  - 4YC9.cif
+
+Failed Downloads:
+  - None

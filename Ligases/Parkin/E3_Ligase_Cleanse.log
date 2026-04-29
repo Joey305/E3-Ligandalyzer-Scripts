@@ -1,0 +1,18 @@
+=== E3_Ligase_Cleanse Log ===
+Ligase: Parkin
+PDB dir: /home/jxs794/WebTools/E3_UPDATE_TOOL/Parkin/PDB
+Curated PDB count: 1
+Non-curated PDB count: 0
+
+RAW_DELETE	NONE
+
+=== Ligase-level SDF generation ===
+LIGASE_SDF	D03	built_from_pdb	Parkin_D03.sdf
+
+=== Per-structure SDF_4Download generation ===
+SDF4	8W31_D03.pdb	copied	8W31_D03.sdf
+
+Deleted raw/non-curated PDBs: 0
+Unique ligands processed: 1
+SDF_4Download files targeted: 1
+Failed ligand codes: None

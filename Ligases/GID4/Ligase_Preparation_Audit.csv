@@ -1,0 +1,2 @@
+Ligase,Input_File,PDB_ID,Selected_Ligand,Ligand_Source_Chain,Ligand_Residue_Number,Ligand_Insertion_Code,Chosen_Protein_Chain_Source,Output_Path,Output_File,Final_Output_Chain
+GID4,GID4/PDB/7SLZ.pdb,7SLZ,9QU,A,301,,A,GID4/PDB/7SLZ_9QU.pdb,7SLZ_9QU.pdb,A

@@ -1,0 +1,13 @@
+{
+  "started_finished": "2026-04-28 18:37:40",
+  "ligase_root": "Ligases",
+  "active_pdb_files": 647,
+  "old_sdfs_retired": 1430,
+  "rebuilt_instance_sdfs": 646,
+  "group_collisions": 51,
+  "failures": 1,
+  "manifest_csv": "8B_MetadataClean_Rebuild_Manifest.csv",
+  "collision_csv": "8B_MetadataClean_Group_Collisions.csv",
+  "failure_csv": "8B_MetadataClean_Failures.csv",
+  "retired_manifest": "Retired_SDFs/Rebuild_20260428_183731/Retired_SDF_Rebuild_Manifest.csv"
+}
