@@ -12,7 +12,7 @@
   <a href="https://E3Ligandalyzer.com">
     <img src="https://img.shields.io/badge/Launch-E3Ligandalyzer.com-success?style=for-the-badge&logo=googlechrome" alt="Launch E3 Recruiter Ligandalyzer">
   </a>
-  <a href="https://github.com/Joey305/E3-Ligandalyzer-Scripts">
+  <a href="https://github.com/schurerlab/E3-Ligandalyzer-Scripts">
     <img src="https://img.shields.io/badge/View%20Code-GitHub-black?style=for-the-badge&logo=github" alt="View code on GitHub">
   </a>
   <a href="mailto:jmschulz@med.miami.edu?subject=E3%20Recruiter%20Ligandalyzer%20Question%20%2F%20Collaboration">
@@ -189,7 +189,7 @@ Some scripts may use only standard-library modules. If additional imports are re
 Clone the repository:
 
 ```bash
-git clone https://github.com/Joey305/E3-Ligandalyzer-Scripts.git
+git clone https://github.com/schurerlab/E3-Ligandalyzer-Scripts.git
 cd E3-Ligandalyzer-Scripts
 ```
 
@@ -363,7 +363,7 @@ The E3 Recruiter Ligandalyzer web platform is freely accessible at:
 The scripts used to build and summarize the dataset are available at:
 
 <p align="center">
-  <a href="https://github.com/Joey305/E3-Ligandalyzer-Scripts">
+  <a href="https://github.com/schurerlab/E3-Ligandalyzer-Scripts">
     <img src="https://img.shields.io/badge/Code-GitHub%20Repository-black?style=for-the-badge&logo=github" alt="GitHub repository">
   </a>
 </p>
